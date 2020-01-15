@@ -7,7 +7,8 @@
     "transpile": "tsc",
     "lint": "eslint --fix ./src/*",
     "build": "npm run lint && npm run transpile",
-    "test": "mocha --require ts-node/register test/**/*.spec.ts"
+    "stryker": "node_modules/.bin/stryker run",
+    "test": "mocha test/**/*.spec.ts --require ts-node/register"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -36,7 +37,7 @@
     "eslint-plugin-standard": "^4.0.1",
     "mocha": "^7.0.0",
     "prettier": "^1.19.1",
-    "stryker-api": "^0.24.1",
+    "ts-node": "^8.6.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.7.4"
   }

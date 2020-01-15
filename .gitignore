@@ -4,4 +4,5 @@
 .stryker-tmp
 .idea
 node_modules
-
+dist
+reports

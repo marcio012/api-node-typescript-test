@@ -1,7 +1,7 @@
-01:35:47 (21924) INFO ConfigReader Using stryker.conf.js in the current working directory.
-01:35:49 (21924) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
-01:35:47 (21924) DEBUG ConfigReader Loading config stryker.conf.js
-01:35:47 (21924) DEBUG ConfigReader Loaded config: {
+03:33:09 (36094) INFO ConfigReader Using stryker.conf.js in the current working directory.
+03:33:09 (36094) DEBUG BroadcastReporter Broadcasting to reporters ["clear-text","progress"]
+03:33:09 (36094) DEBUG ConfigReader Loading config stryker.conf.js
+03:33:09 (36094) DEBUG ConfigReader Loaded config: {
   "mutate": [
     "src/**/*.ts"
   ],
@@ -13,11 +13,10 @@
     "@stryker-mutator/*"
   ],
   "reporters": [
-    "html",
     "clear-text",
     "progress"
   ],
-  "coverageAnalysis": "of",
+  "coverageAnalysis": "off",
   "testRunner": "mocha",
   "mutator": "typescript",
   "transpilers": [
@@ -41,30 +40,361 @@
   "tsconfigFile": "tsconfig.json",
   "configFile": "stryker.conf.js"
 }
-01:35:47 (21924) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
-01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
-01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
-01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
-01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
-01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter
-01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
-01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
-01:35:48 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
-01:35:49 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
-01:35:49 (21924) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
-01:35:49 (21924) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
-01:35:49 (21924) DEBUG MochaOptionsLoader Loaded options: {
+03:33:09 (36094) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:33:09 (36094) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:33:09 (36094) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:33:09 (36094) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:33:09 (36094) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:33:09 (36094) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:33:09 (36094) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:33:09 (36094) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:33:09 (36094) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
+03:33:09 (36094) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
+03:33:09 (36094) DEBUG MochaOptionsLoader Loaded options: {
   "extension": [
     "js"
   ],
   "timeout": 2000,
   "ui": "bdd"
 }
-01:35:49 (21924) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json
-01:38:13 (22018) INFO ConfigReader Using stryker.conf.js in the current working directory.
-01:38:15 (22018) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
-01:38:13 (22018) DEBUG ConfigReader Loading config stryker.conf.js
-01:38:13 (22018) DEBUG ConfigReader Loaded config: {
+03:33:09 (36094) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json
+03:33:09 (36094) INFO InputFileResolver Found 2 of 22 file(s) to be mutated.
+03:33:09 (36094) DEBUG InputFileResolver All input files: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.conf.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.log",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/yarn.lock",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.eslintrc.yml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/misc.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/modules.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/typeScriptNodeEs6Postgress.iml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/vcs.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.prettierrc",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/Readme.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/info.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/package.json",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/Queue.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/app.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/test/queue.spec.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json"
+]
+03:33:09 (36094) DEBUG InputFileResolver Files to mutate: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/Queue.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/app.ts"
+]
+03:33:09 (36094) DEBUG TemporaryDirectory Using temp directory "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp"
+03:33:09 (36094) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+03:33:09 (36094) INFO InitialTestExecutor Starting initial test run. This may take a while.
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/body-parser/index.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/index.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/base.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/globals.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/assert.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/async_hooks.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/buffer.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/child_process.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/cluster.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/console.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/constants.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/crypto.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dgram.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dns.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/domain.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/events.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/fs.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http2.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/https.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/inspector.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/module.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/net.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/os.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/path.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/perf_hooks.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/process.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/punycode.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/querystring.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/readline.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/repl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/stream.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/string_decoder.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/timers.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tls.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/trace_events.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tty.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/url.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/util.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/v8.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/vm.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/worker_threads.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/zlib.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/fs.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/util.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/globals.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es5.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es5.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es5.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.core.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.core.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.core.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.collection.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.collection.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.collection.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.generator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.generator.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.generator.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.iterable.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.promise.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.promise.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.proxy.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.proxy.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.reflect.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.reflect.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.wellknown.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.wellknown.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.array.include.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.array.include.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.object.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.object.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.object.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.sharedmemory.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.sharedmemory.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.string.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.string.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.string.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.typedarrays.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.typedarrays.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asyncgenerator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asyncgenerator.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asynciterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asynciterable.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.promise.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.promise.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.regexp.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.regexp.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.intl.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.bigint.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.bigint.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.bigint.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/connect/index.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/chai/index.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/color-name/index.d.ts
+03:33:09 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/eslint-visitor-keys/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express-serve-static-core/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/range-parser/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/serve-static/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mime/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/json-schema/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/minimatch/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mocha/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-bom/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-json-comments/index.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.full.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.full.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.full.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.dom.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.webworker.importscripts.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.webworker.importscripts.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.scripthost.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.scripthost.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.scripthost.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Resolving lib file lib.dom.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.iterable.d.ts
+03:33:10 (36094) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.iterable.d.ts
+03:33:10 (36094) DEBUG InitialTestExecutor Transpiled files: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.conf.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.log",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/yarn.lock",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.eslintrc.yml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/misc.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/modules.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/typeScriptNodeEs6Postgress.iml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/vcs.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.prettierrc",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/Readme.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/info.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/package.json",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/test/queue.spec.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json"
+]
+03:33:10 (36094) DEBUG Sandbox Creating a sandbox for files in /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp/sandbox1926163
+03:33:10 (36094) DEBUG Sandbox Creating test runner 0
+03:33:10 (36094) DEBUG ChildProcessProxy Starting /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 36097
+03:33:11 (36097) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp/sandbox1926163
+03:33:11 (36097) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:33:11 (36097) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:33:11 (36097) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:33:11 (36097) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:33:11 (36097) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:33:11 (36097) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:33:11 (36097) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:33:11 (36097) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:33:11 (36097) DEBUG MochaTestRunner Mocha >= 6 detected. Using mocha's `handleFiles` to load files
+03:33:11 (36094) TRACE ChildProcessProxy [31mError: No test files found[39m
+
+03:33:11 (36094) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+03:33:11 (36097) DEBUG MochaTestRunner Starting Mocha test run
+03:33:11 (36097) DEBUG MochaTestRunner Mocha test run completed: 0/0 passed
+03:33:11 (36094) DEBUG ChildProcessProxy Disposing of worker process 36097
+03:33:11 (36094) DEBUG ChildProcessProxy Kill 36097
+03:33:11 (36094) WARN InitialTestExecutor No tests were executed. Stryker will exit prematurely. Please check your configuration.
+03:33:11 (36094) DEBUG ChildProcessProxy Starting /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/transpiler/ChildProcessTranspilerWorker.js in child process 36099
+03:33:11 (36099) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:33:11 (36099) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:33:11 (36099) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:33:11 (36099) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:33:11 (36099) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:33:11 (36099) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:33:12 (36099) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:33:12 (36099) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/body-parser/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/base.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/globals.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/assert.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/async_hooks.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/buffer.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/child_process.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/cluster.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/console.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/constants.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/crypto.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dgram.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dns.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/domain.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/events.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/fs.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http2.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/https.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/inspector.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/module.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/net.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/os.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/path.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/perf_hooks.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/process.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/punycode.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/querystring.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/readline.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/repl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/stream.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/string_decoder.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/timers.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tls.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/trace_events.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tty.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/url.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/util.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/v8.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/vm.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/worker_threads.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/zlib.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/fs.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/util.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/globals.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es5.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es5.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es5.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.core.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.core.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.core.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.collection.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.collection.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.collection.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.generator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.generator.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.generator.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.iterable.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.promise.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.promise.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.proxy.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.proxy.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.reflect.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.reflect.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.wellknown.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.wellknown.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.array.include.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.array.include.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.object.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.object.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.object.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.sharedmemory.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.sharedmemory.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.string.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.string.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.string.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.typedarrays.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.typedarrays.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asyncgenerator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asyncgenerator.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asynciterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asynciterable.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.promise.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.promise.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.regexp.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.regexp.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.intl.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.bigint.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.bigint.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.bigint.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/connect/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/chai/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/color-name/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/eslint-visitor-keys/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express-serve-static-core/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/range-parser/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/serve-static/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mime/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/json-schema/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/minimatch/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mocha/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-bom/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-json-comments/index.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.full.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.full.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.full.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.dom.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.webworker.importscripts.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.webworker.importscripts.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.scripthost.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.scripthost.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.scripthost.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Resolving lib file lib.dom.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.iterable.d.ts
+03:33:12 (36099) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.iterable.d.ts
+03:33:13 (36094) INFO MutatorFacade 10 Mutant(s) generated
+03:34:09 (36180) INFO ConfigReader Using stryker.conf.js in the current working directory.
+03:34:10 (36180) DEBUG BroadcastReporter Broadcasting to reporters ["clear-text","progress"]
+03:34:09 (36180) DEBUG ConfigReader Loading config stryker.conf.js
+03:34:09 (36180) DEBUG ConfigReader Loaded config: {
   "mutate": [
     "src/**/*.ts"
   ],
@@ -76,11 +406,10 @@
     "@stryker-mutator/*"
   ],
   "reporters": [
-    "html",
     "clear-text",
     "progress"
   ],
-  "coverageAnalysis": "perTest",
+  "coverageAnalysis": "off",
   "testRunner": "mocha",
   "mutator": "typescript",
   "transpilers": [
@@ -104,23 +433,354 @@
   "tsconfigFile": "tsconfig.json",
   "configFile": "stryker.conf.js"
 }
-01:38:13 (22018) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
-01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
-01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
-01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
-01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
-01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter
-01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
-01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
-01:38:15 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
-01:38:15 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
-01:38:15 (22018) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
-01:38:15 (22018) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
-01:38:15 (22018) DEBUG MochaOptionsLoader Loaded options: {
+03:34:09 (36180) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:34:09 (36180) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:34:09 (36180) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:34:09 (36180) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:34:09 (36180) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:34:09 (36180) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:34:09 (36180) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:34:09 (36180) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:34:10 (36180) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
+03:34:10 (36180) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
+03:34:10 (36180) DEBUG MochaOptionsLoader Loaded options: {
   "extension": [
     "js"
   ],
   "timeout": 2000,
   "ui": "bdd"
 }
-01:38:15 (22018) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json
+03:34:10 (36180) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json
+03:34:40 (36180) INFO InputFileResolver Found 2 of 22 file(s) to be mutated.
+03:34:40 (36180) DEBUG InputFileResolver All input files: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.conf.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.log",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/yarn.lock",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.eslintrc.yml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/misc.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/modules.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/typeScriptNodeEs6Postgress.iml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/vcs.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.prettierrc",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/Readme.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/info.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/package.json",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/Queue.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/app.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/test/queue.spec.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json"
+]
+03:34:40 (36180) DEBUG InputFileResolver Files to mutate: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/Queue.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/src/app.ts"
+]
+03:34:40 (36180) DEBUG TemporaryDirectory Using temp directory "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp"
+03:34:40 (36180) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+03:34:40 (36180) INFO InitialTestExecutor Starting initial test run. This may take a while.
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/body-parser/index.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/index.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/base.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/globals.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/assert.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/async_hooks.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/buffer.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/child_process.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/cluster.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/console.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/constants.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/crypto.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dgram.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dns.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/domain.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/events.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/fs.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http2.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/https.d.ts
+03:34:40 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/inspector.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/module.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/net.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/os.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/path.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/perf_hooks.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/process.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/punycode.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/querystring.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/readline.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/repl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/stream.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/string_decoder.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/timers.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tls.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/trace_events.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tty.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/url.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/util.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/v8.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/vm.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/worker_threads.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/zlib.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/fs.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/util.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/globals.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es5.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es5.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es5.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.core.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.core.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.core.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.collection.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.collection.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.collection.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.generator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.generator.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.generator.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.iterable.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.promise.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.promise.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.proxy.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.proxy.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.reflect.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.reflect.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.wellknown.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.wellknown.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.array.include.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.array.include.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.object.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.object.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.object.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.sharedmemory.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.sharedmemory.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.string.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.string.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.string.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.typedarrays.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.typedarrays.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asyncgenerator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asyncgenerator.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asynciterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asynciterable.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.promise.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.promise.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.regexp.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.regexp.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.intl.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.bigint.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.bigint.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.bigint.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/connect/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/chai/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/color-name/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/eslint-visitor-keys/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express-serve-static-core/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/range-parser/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/serve-static/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mime/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/json-schema/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/minimatch/index.d.ts
+03:34:41 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mocha/index.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-bom/index.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-json-comments/index.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.full.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.full.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.full.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.dom.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.webworker.importscripts.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.webworker.importscripts.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.scripthost.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.scripthost.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.scripthost.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Resolving lib file lib.dom.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.iterable.d.ts
+03:34:42 (36180) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.iterable.d.ts
+03:34:42 (36180) DEBUG InitialTestExecutor Transpiled files: [
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/Queue.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/dist/app.js.map",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.conf.js",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/stryker.log",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/yarn.lock",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.eslintrc.yml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/.gitignore",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/misc.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/modules.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/typeScriptNodeEs6Postgress.iml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.idea/vcs.xml",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.prettierrc",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/Readme.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/info.md",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/package.json",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/test/queue.spec.ts",
+  "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json"
+]
+03:34:42 (36180) DEBUG Sandbox Creating a sandbox for files in /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp/sandbox7876070
+03:34:42 (36180) DEBUG Sandbox Creating test runner 0
+03:34:42 (36180) DEBUG ChildProcessProxy Starting /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 36189
+03:34:43 (36189) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/.stryker-tmp/sandbox7876070
+03:34:43 (36189) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:34:43 (36189) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:34:43 (36189) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:34:43 (36189) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:34:43 (36189) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:34:43 (36189) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:34:44 (36189) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:34:44 (36189) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:34:45 (36189) DEBUG MochaTestRunner Mocha >= 6 detected. Using mocha's `handleFiles` to load files
+03:34:45 (36180) TRACE ChildProcessProxy [31mError: No test files found[39m
+
+03:34:45 (36180) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+03:34:45 (36189) DEBUG MochaTestRunner Starting Mocha test run
+03:34:45 (36189) DEBUG MochaTestRunner Mocha test run completed: 0/0 passed
+03:34:45 (36180) DEBUG ChildProcessProxy Disposing of worker process 36189
+03:34:45 (36180) DEBUG ChildProcessProxy Kill 36189
+03:34:45 (36180) WARN InitialTestExecutor No tests were executed. Stryker will exit prematurely. Please check your configuration.
+03:34:45 (36180) DEBUG ChildProcessProxy Starting /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/transpiler/ChildProcessTranspilerWorker.js in child process 36191
+03:34:45 (36191) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+03:34:45 (36191) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+03:34:45 (36191) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+03:34:45 (36191) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+03:34:45 (36191) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+03:34:45 (36191) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+03:34:45 (36191) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+03:34:45 (36191) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/body-parser/index.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/index.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/base.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/globals.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/assert.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/async_hooks.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/buffer.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/child_process.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/cluster.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/console.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/constants.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/crypto.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dgram.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/dns.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/domain.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/events.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/fs.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/http2.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/https.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/inspector.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/module.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/net.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/os.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/path.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/perf_hooks.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/process.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/punycode.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/querystring.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/readline.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/repl.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/stream.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/string_decoder.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/timers.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tls.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/trace_events.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/tty.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/url.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/util.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/v8.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/vm.d.ts
+03:34:45 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/worker_threads.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/zlib.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/fs.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/util.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/node/ts3.2/globals.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es5.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es5.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es5.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.core.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.core.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.core.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.collection.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.collection.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.collection.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.generator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.generator.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.generator.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.iterable.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.iterable.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.promise.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.promise.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.proxy.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.proxy.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.proxy.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.reflect.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.reflect.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.reflect.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2015.symbol.wellknown.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2015.symbol.wellknown.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2016.array.include.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2016.array.include.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2016.array.include.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.object.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.object.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.object.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.sharedmemory.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.sharedmemory.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.string.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.string.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.string.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.typedarrays.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.typedarrays.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.typedarrays.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asyncgenerator.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asyncgenerator.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.asynciterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.asynciterable.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.asynciterable.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.promise.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.promise.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.promise.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.regexp.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.regexp.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.regexp.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2018.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2018.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2018.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.intl.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.intl.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.esnext.bigint.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.esnext.bigint.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.esnext.bigint.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/connect/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/chai/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/color-name/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/eslint-visitor-keys/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/express-serve-static-core/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/range-parser/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/serve-static/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mime/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/json-schema/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/minimatch/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/mocha/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-bom/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@types/strip-json-comments/index.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.es2017.full.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.es2017.full.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.es2017.full.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.dom.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.webworker.importscripts.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.webworker.importscripts.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.webworker.importscripts.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.scripthost.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.scripthost.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.scripthost.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Resolving lib file lib.dom.iterable.d.ts to /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/typescript/lib/lib.dom.iterable.d.ts
+03:34:46 (36191) DEBUG TranspilingLanguageService Pulling file into memory: lib.dom.iterable.d.ts
+03:34:46 (36180) INFO MutatorFacade 10 Mutant(s) generated
