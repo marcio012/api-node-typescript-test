@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# stryker temp files
+.stryker-tmp
+.idea
+node_modules

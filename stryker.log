@@ -1,0 +1,126 @@
+01:35:47 (21924) INFO ConfigReader Using stryker.conf.js in the current working directory.
+01:35:49 (21924) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
+01:35:47 (21924) DEBUG ConfigReader Loading config stryker.conf.js
+01:35:47 (21924) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "src/**/*.ts"
+  ],
+  "logLevel": "debug",
+  "fileLogLevel": "trace",
+  "timeoutMS": 5000,
+  "timeoutFactor": 1.5,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "coverageAnalysis": "of",
+  "testRunner": "mocha",
+  "mutator": "typescript",
+  "transpilers": [
+    "typescript"
+  ],
+  "maxConcurrentTestRunners": null,
+  "symlinkNodeModules": true,
+  "thresholds": {
+    "break": null,
+    "high": 80,
+    "low": 60
+  },
+  "allowConsoleColors": true,
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "mutationScore"
+  },
+  "tempDirName": ".stryker-tmp",
+  "packageManager": "yarn",
+  "testFramework": "mocha",
+  "tsconfigFile": "tsconfig.json",
+  "configFile": "stryker.conf.js"
+}
+01:35:47 (21924) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+01:35:47 (21924) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter
+01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+01:35:47 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+01:35:48 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+01:35:49 (21924) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+01:35:49 (21924) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
+01:35:49 (21924) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
+01:35:49 (21924) DEBUG MochaOptionsLoader Loaded options: {
+  "extension": [
+    "js"
+  ],
+  "timeout": 2000,
+  "ui": "bdd"
+}
+01:35:49 (21924) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json
+01:38:13 (22018) INFO ConfigReader Using stryker.conf.js in the current working directory.
+01:38:15 (22018) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
+01:38:13 (22018) DEBUG ConfigReader Loading config stryker.conf.js
+01:38:13 (22018) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "src/**/*.ts"
+  ],
+  "logLevel": "debug",
+  "fileLogLevel": "trace",
+  "timeoutMS": 5000,
+  "timeoutFactor": 1.5,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "coverageAnalysis": "perTest",
+  "testRunner": "mocha",
+  "mutator": "typescript",
+  "transpilers": [
+    "typescript"
+  ],
+  "maxConcurrentTestRunners": null,
+  "symlinkNodeModules": true,
+  "thresholds": {
+    "break": null,
+    "high": 80,
+    "low": 60
+  },
+  "allowConsoleColors": true,
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "mutationScore"
+  },
+  "tempDirName": ".stryker-tmp",
+  "packageManager": "yarn",
+  "testFramework": "mocha",
+  "tsconfigFile": "tsconfig.json",
+  "configFile": "stryker.conf.js"
+}
+01:38:13 (22018) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator
+01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter" (matched with expression @stryker-mutator/*)
+01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework" (matched with expression @stryker-mutator/*)
+01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner" (matched with expression @stryker-mutator/*)
+01:38:13 (22018) DEBUG PluginLoader Loading plugin "/Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript" (matched with expression @stryker-mutator/*)
+01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/html-reporter
+01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-framework
+01:38:13 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/mocha-runner
+01:38:15 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/typescript
+01:38:15 (22018) DEBUG PluginLoader Loading plugins /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/node_modules/@stryker-mutator/core/src/reporters/index.js
+01:38:15 (22018) DEBUG MochaOptionsLoader Mocha >= 6 detected. Using mocha's `loadOptions` to load mocha options
+01:38:15 (22018) TRACE MochaOptionsLoader Mocha: loadOptions([]) => {"_":[],"diff":true,"config":false,"package":false,"opts":false,"extension":["js"],"reporter":"spec","R":"spec","slow":75,"s":75,"timeout":2000,"t":2000,"timeouts":2000,"ui":"bdd","u":"bdd","watch-ignore":["node_modules",".git"]}
+01:38:15 (22018) DEBUG MochaOptionsLoader Loaded options: {
+  "extension": [
+    "js"
+  ],
+  "timeout": 2000,
+  "ui": "bdd"
+}
+01:38:15 (22018) INFO TypescriptConfigEditor Loading tsconfig file /Users/marciohelenomaiapessoa/Sites/typeScriptNodeEs6Postgress/tsconfig.json

@@ -1,0 +1,43 @@
+{
+  "name": "typeScriptNodeEs6Postgress",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "license": "MIT",
+  "scripts": {
+    "transpile": "tsc",
+    "lint": "eslint --fix ./src/*",
+    "build": "npm run lint && npm run transpile",
+    "test": "mocha --require ts-node/register test/**/*.spec.ts"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^2.5.0",
+    "@stryker-mutator/html-reporter": "^2.5.0",
+    "@stryker-mutator/mocha-framework": "^2.5.0",
+    "@stryker-mutator/mocha-runner": "^2.5.0",
+    "@stryker-mutator/typescript": "^2.5.0",
+    "@types/chai": "^4.2.7",
+    "@types/express": "^4.17.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.6",
+    "@typescript-eslint/eslint-plugin": "^2.16.0",
+    "@typescript-eslint/parser": "^2.16.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.0.0",
+    "prettier": "^1.19.1",
+    "stryker-api": "^0.24.1",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.4"
+  }
+}
