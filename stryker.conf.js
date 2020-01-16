@@ -3,12 +3,12 @@ module.exports = function(config) {
     mutator: 'typescript',
     packageManager: 'yarn',
     reporters: ['html', 'clear-text', 'progress'],
-    testRunner: 'mocha',
     transpilers: ['typescript'],
     testFramework: 'mocha',
     coverageAnalysis: 'perTest',
     tsconfigFile: 'tsconfig.json',
     mutate: ['src/**/*.ts'],
+    testRunner: 'mocha',
     mochaOptions: {
       spec: ['dist/test/**/*.js'],
     },
