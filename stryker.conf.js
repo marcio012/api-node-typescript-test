@@ -11,6 +11,13 @@ module.exports = function(config) {
     testRunner: 'mocha',
     mochaOptions: {
       spec: ['dist/test/**/*.js'],
+      // opts: '.mocharc.yml',
+      ui: 'bdd',
+      require: ['ts-node/register', 'source-map-support/register'],
+      asyncOnly: false,
     },
+    // mochaOptions: {
+    //   spec: ['dist/test/**/*.js'],
+    // },
   });
 };

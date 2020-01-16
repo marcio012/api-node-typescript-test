@@ -1,0 +1,54 @@
+# This is an example Mocha config containing every Mocha option plus others
+#allow-uncaught: false
+async-only: false
+#bail: false
+#check-leaks: false
+color: true
+#delay: false
+#diff: true
+#exit: false # could be expressed as "no-exit: true"
+extension:
+  - ts
+# fgrep and grep are mutually exclusive
+# fgrep: something
+#file:
+#  - /path/to/some/file
+#  - /path/to/some/other/file
+#forbid-only: false
+#forbid-pending: false
+#full-trace: false
+#global:
+#  - jQuery
+#  - $
+# fgrep and grep are mutually exclusive
+# grep: something
+growl: false
+ignore:
+  - 'node_modules'
+#inline-diffs: false
+# needs to be used with grep or fgrep
+# invert: false
+opts: false
+recursive: false
+#reporter: spec
+#reporter: landing
+reporter: nyan
+#reporter-option:
+#  - foo=bar
+#  - baz=quux
+require: 'ts-node/register'
+#retries: 1
+#slow: 75
+#sort: false
+spec: test/**/*.spec.ts # the positional arguments!
+timeout: 35000 # same as "no-timeout: true" or "timeout: 0"
+trace-warnings: true # node flags ok
+ui: bdd
+v8-stack-trace-limit: 100 # V8 flags are prepended with "v8-"
+watch: false
+watch-files:
+  - 'lib/**/*.ts'
+  - 'test/**/*.ts'
+watch-ignore:
+  - 'lib/vendor'
+  - 'node_modules'
