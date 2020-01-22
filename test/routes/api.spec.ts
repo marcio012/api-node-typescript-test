@@ -1,4 +1,5 @@
 import * as chai from 'chai';
+
 import 'mocha';
 
 import app from '../../src/app';
@@ -12,17 +13,18 @@ describe('baseRoute', () => {
   it('should respond with HTTP 200 status', async () => {
     return chai
       .request(app)
-      .get('/index')
+      .get('/api')
       .then(res => {
         expect(res.status).to.be.equal(200);
       });
   });
+
   it('should respond with success message', async () => {
     return chai
       .request(app)
-      .get('/index')
+      .get('/api')
       .then(res => {
-        expect(res.body.status).to.be.equal('success');
+        expect(res.body.title).to.be.equal('Get api Order');
       });
   });
 });
