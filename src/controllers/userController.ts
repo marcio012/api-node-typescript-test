@@ -1,20 +1,21 @@
 /* eslint-disable prefer-const */
 import { Request, Response } from 'express';
 import User from '../models/user';
-import { ApplicationType } from '../models/ApplicationType';
 import { formatOutput } from '../utils/orderApiUtilFormat';
 
+const halson = require('halson');
 let users: Array<User> = [];
 
 export let getUser = (req: Request, res: Response) => {
-  let username = req.params.username;
+  const username = req.params.username;
   let user = users.find(obj => obj.username === username);
-  let httpStatusCode = user ? 200 : 404;
-  return formatOutput(res, user, httpStatusCode, ApplicationType.JSON);
+  if (user) user = halson(user).addLink('self', `/users/${user.id}`);
+  const httpStatusCode = user ? 200 : 404;
+  return formatOutput(res, user, httpStatusCode, 'user');
 };
 
 export let addUser = (req: Request, res: Response) => {
-  const user: User = {
+  let user: User = {
     // generic random value from 1 to 100 only for tests so far
     id: Math.floor(Math.random() * 100) + 1,
     username: req.body.username,
@@ -25,9 +26,10 @@ export let addUser = (req: Request, res: Response) => {
     phone: req.body.phone,
     userStatus: 1,
   };
-  users.push(user);
 
-  return formatOutput(res, user, 201, ApplicationType.JSON);
+  users.push(user);
+  user = halson(user).addLink('self', `/users/${user.id}`);
+  return formatOutput(res, user, 201, 'user');
 };
 
 export let updateUser = (req: Request, res: Response) => {
@@ -49,18 +51,15 @@ export let updateUser = (req: Request, res: Response) => {
 
   users[userIndex] = user;
 
-  return formatOutput(res, {}, 204, ApplicationType.JSON);
+  return formatOutput(res, {}, 204);
 };
 
 export let removeUser = (req: Request, res: Response) => {
   const username = req.params.username;
   const userIndex = users.findIndex(item => item.username === username);
-
   if (userIndex === -1) {
     return res.status(404).send();
   }
-
   users = users.filter(item => item.username !== username);
-
-  return formatOutput(res, {}, 204, ApplicationType.JSON);
+  return formatOutput(res, {}, 204);
 };

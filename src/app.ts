@@ -1,6 +1,5 @@
 import * as bodyParser from 'body-parser';
 import * as express from 'express';
-import { Index } from './routes';
 import { UserRoute } from './routes/userRoute';
 import { APIRoute } from './routes/api';
 import { OrderRoute } from './routes/orderRoute';

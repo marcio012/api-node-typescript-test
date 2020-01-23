@@ -3,19 +3,40 @@ import * as _ from 'lodash';
 import Order from '../models/order';
 import { OrderStatus } from '../models/orderStatus';
 import { formatOutput } from '../utils/orderApiUtilFormat';
-import { ApplicationType } from '../models/ApplicationType';
+
+const halson = require('halson');
 
 let orders: Array<Order> = [];
 
 export const getOrder = (req: Request, res: Response) => {
   const id = req.params.id;
-  const order = orders.find(obj => obj.id === Number(id));
+  let order: Order | undefined | null = orders.find(obj => obj.id === Number(id));
+  if (order) order = halson(order).addLink('self', `/store/orders/${order.id}`);
   const httpStatusCode = order ? 200 : 404;
-  return formatOutput(res, order, httpStatusCode, ApplicationType.JSON);
+  return formatOutput(res, order, httpStatusCode, 'order');
+};
+
+export const getAllOrders = (req: Request, res: Response) => {
+  const limit = req.query.limit || orders.length;
+  const offset = req.query.offset || 0;
+  let filterOrders = _(orders)
+    .drop(offset)
+    .take(limit)
+    .value();
+
+  filterOrders = filterOrders.map(order => {
+    return halson(order)
+      .addLink('self', `/store/orders/${order.id}`)
+      .addLink('user', {
+        href: `/users/${order.userId}`,
+      });
+  });
+
+  return formatOutput(res, filterOrders, 200, 'order');
 };
 
 export const addOrder = (req: Request, res: Response) => {
-  const order: Order = {
+  let order: Order = {
     // generic random value from 1 to 100 only for tests so far
     id: Math.floor(Math.random() * 100) + 1,
     userId: req.body.userId,
@@ -26,7 +47,13 @@ export const addOrder = (req: Request, res: Response) => {
   };
   orders.push(order);
 
-  return formatOutput(res, order, 201, ApplicationType.JSON);
+  order = halson(order)
+    .addLink('self', `/store/orders/${order.id}`)
+    .addLink('user', {
+      href: `users/${order.userId}`,
+    });
+
+  return formatOutput(res, order, 201, 'order');
 };
 
 export const removeOrder = (req: Request, res: Response) => {
@@ -39,18 +66,7 @@ export const removeOrder = (req: Request, res: Response) => {
 
   orders = orders.filter(item => item.id !== id);
 
-  return formatOutput(res, {}, 204, ApplicationType.JSON);
-};
-
-export const getAllOrders = (req: Request, res: Response) => {
-  const limit = req.query.limit || orders.length;
-  const offset = req.query.offset || 0;
-  const filterOrders = _(orders)
-    .drop(offset)
-    .take(limit)
-    .value();
-
-  return formatOutput(res, filterOrders, 200, ApplicationType.JSON);
+  return formatOutput(res, {}, 204);
 };
 
 export const getInventory = (req: Request, res: Response) => {
@@ -61,5 +77,5 @@ export const getInventory = (req: Request, res: Response) => {
   }
   const grouppedOrders = _.groupBy(inventoryOrders, 'userId');
 
-  return formatOutput(res, grouppedOrders, 200, ApplicationType.JSON);
+  return formatOutput(res, grouppedOrders, 200, 'inventory');
 };
