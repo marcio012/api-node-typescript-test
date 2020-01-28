@@ -41,7 +41,7 @@ require: 'ts-node/register'
 #slow: 75
 #sort: false
 spec: test/**/*.spec.ts # the positional arguments!
-timeout: 35000 # same as "no-timeout: true" or "timeout: 0"
+timeout: 0 # same as "no-timeout: true" or "timeout: 0"
 trace-warnings: true # node flags ok
 ui: bdd
 v8-stack-trace-limit: 100 # V8 flags are prepended with "v8-"

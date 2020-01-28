@@ -22,9 +22,9 @@ const order = {
 let orderIdCreated: any;
 
 describe('userRoute', () => {
-  after(() => {
+  before(async () => {
     expect(OrderModel.modelName).to.be.equal('Order');
-    OrderModel.collection.drop();
+    await OrderModel.collection.drop();
   });
 
   it('should respond with HTTP 404 status because there is no order', async () => {

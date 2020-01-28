@@ -7,5 +7,6 @@ export class UserRoute {
     app.route('/users/:username').patch(userController.updateUser);
     app.route('/users/:username').delete(userController.removeUser);
     app.route('/users/:username').get(userController.getUser);
+    app.route('/users').get(userController.getAllUser);
   }
 }

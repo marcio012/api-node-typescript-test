@@ -9,20 +9,20 @@ chai.use(chaiHttp);
 
 const expect = chai.expect;
 
-const user = {
-  username: 'marcio',
-  firstName: 'Márcio',
-  lastName: 'Heleno',
-  email: 'marcio@email.com',
-  phone: '55 85 90000.1212',
-  password: '123456',
-  userStatus: 1,
-};
-
 describe('userRoute', () => {
-  after(() => {
+  const user = {
+    username: 'marcio',
+    firstName: 'Márcio',
+    lastName: 'Heleno',
+    email: 'marcio@email.com',
+    phone: '55 85 90000.1212',
+    password: '123456',
+    userStatus: 1,
+  };
+
+  before(async () => {
     expect(UserModel.modelName).to.be.equal('User');
-    UserModel.collection.drop();
+    await UserModel.collection.drop();
   });
 
   it('should respond with HTTP 404 status because there is no user', async () => {

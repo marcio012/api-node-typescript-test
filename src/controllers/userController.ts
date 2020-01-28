@@ -7,15 +7,29 @@ const halson = require('halson');
 
 export const getUser = (req: Request, res: Response) => {
   const username = req.params.username;
-  UserModel.findOne({ username: username }, (error: any, user: UserModel) => {
+  UserModel.findOne({ username: username }, (error, user: UserModel | null) => {
     if (!user) return res.status(404).send();
     if (error) console.log(error);
 
     user = user.toJSON();
+    // @ts-ignore
     user._id = user._id.toString();
+    // @ts-ignore
     user = halson(user).addLink('self', `/users/${user._id}`);
 
     return formatOutput(res, user, 200, 'user');
+  });
+};
+
+export const getAllUser = (req: Request, res: Response) => {
+  UserModel.find({}, (err, users) => {
+    if (err) console.log(err);
+
+    users = users.map(user => {
+      return halson(user.toJSON()).addLink('self', `/users/${user._id}`);
+    });
+
+    return formatOutput(res, users, 200, 'user');
   });
 };
 
