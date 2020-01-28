@@ -1,7 +1,8 @@
 import * as orderController from '../controllers/orderController';
+import { Application } from 'express';
 
 export class OrderRoute {
-  public routes(app: any): void {
+  public routes(app: Application): void {
     app.route('/store/inventory').get(orderController.getInventory);
     app.route('/store/orders').post(orderController.addOrder);
     app.route('/store/orders').get(orderController.getAllOrders);

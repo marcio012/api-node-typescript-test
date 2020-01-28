@@ -30,9 +30,9 @@ ignore:
 # invert: false
 opts: false
 recursive: false
-#reporter: spec
+reporter: spec
 #reporter: landing
-reporter: nyan
+#reporter: nyan
 #reporter-option:
 #  - foo=bar
 #  - baz=quux

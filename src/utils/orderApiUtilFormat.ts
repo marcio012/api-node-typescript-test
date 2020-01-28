@@ -1,5 +1,5 @@
 import { Response } from 'express';
-import * as js2xmlparser from 'js2xmlparser';
+import js2xmlparser from 'js2xmlparser';
 import { ApplicationType } from '../models/ApplicationType';
 
 export const formatOutput = (res: Response, data: any, statusCode: number, rootElement?: string) => {

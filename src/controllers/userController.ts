@@ -1,3 +1,4 @@
+/* eslint-disable prefer-const */
 import { Request, Response } from 'express';
 import { UserModel } from '../schemas/user';
 import { formatOutput } from '../utils/orderApiUtilFormat';
@@ -28,7 +29,7 @@ export const addUser = (req: Request, res: Response) => {
   });
 };
 
-export const updateUser = (req: Request, res: Response) => {
+export let updateUser = (req: Request, res: Response) => {
   const username = req.params.username;
 
   UserModel.findOne({ username: username }, (error, user) => {
@@ -60,7 +61,7 @@ export const removeUser = (req: Request, res: Response) => {
 
     user.remove(error => {
       if (error) console.log(error);
-      res.status(404).send();
+      res.status(204).send();
     });
   });
 };

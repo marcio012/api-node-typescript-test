@@ -1,7 +1,5 @@
 import { Document, Model, model, Schema } from 'mongoose';
 import Order from '../models/order';
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import { OrderStatus } from '../models/orderStatus';
 
 export interface OrderModel extends Order, Document {}
 
